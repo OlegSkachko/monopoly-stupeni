@@ -1,0 +1,24 @@
+.inp-main {
+    position: relative;
+    display: flex; 
+}
+
+.inp {
+    position: relative;
+    display: flex;
+    height: 38px;
+    border: none;
+    width: 468px;
+    background: 0 0;
+    color: #fff;
+    font-size: 15px;
+    background-color: #262c2f;
+}
+
+.btn {
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    background-color: #262c2f;
+    color: #fff;
+}

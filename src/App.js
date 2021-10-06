@@ -1,10 +1,12 @@
 import React from 'react';
+import Chat from './components/organisms/Chat/Chat';
 
 
 function App() {
+  
   return (
     <div className="App">
-     
+      <Chat/>
     </div>
   );
 }
