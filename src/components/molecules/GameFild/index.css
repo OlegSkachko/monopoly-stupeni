@@ -6,6 +6,7 @@
 }
 
 .table-body-board-fields-one {
+    background-color: #90a0a8;
     position: absolute;
     transition: .1s ease-in-out;
     z-index: 3;
@@ -13,11 +14,14 @@
 
 .table-body-board-fields {
     position: relative;
+    left: 150px;
     width: 100%;
     height: 100%;
+   
 }
 
 * {
+    
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
