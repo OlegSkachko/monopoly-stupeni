@@ -1,6 +1,6 @@
 .ball {
     margin: 5px;
-   
+   border: 2px solid darkred;
     position: relative;
     background-color: red;
     width: 30px;

@@ -1,12 +1,11 @@
 .chat {
     display: flex;
-    top: 100px;
-    left: 100px;
+   
     margin: 1px;
     border-radius: -1px;
     padding: 8px;
     padding-bottom: 4px;
-    width: 449px;
+    width: 367px;
     height: 411px;
     background-color: #262c2f;
     overflow-y: scroll;

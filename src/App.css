@@ -3,10 +3,13 @@ body {
     display: flex; 
     scrollbar-track-color:#262c2f;
     scrollbar-face-color:#262c2f;
+    margin: 0;
 }
 .App {
+    
     position: relative;
     display: flex;
-    width: 493px;
-    height: 493px;
+   
+    width: 100vw;
+    height: 100vh;
 }

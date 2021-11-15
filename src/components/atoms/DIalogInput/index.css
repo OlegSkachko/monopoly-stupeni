@@ -1,17 +1,19 @@
 .inp-main {
     position: relative;
-    display: flex; 
+    display: flex;
+    border: 1px solid white ; 
 }
 
 .inp {
+ 
     position: relative;
     display: flex;
     height: 38px;
     border: none;
-    width: 411px;
+    width: 320px;
     background: 0 0;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     background-color: #262c2f;
 }
 

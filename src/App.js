@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GameField from './components/molecules/GameField/GameField';
 import Chat from './components/organisms/Chat/Chat';
-
+import './App.css'
 
 
 function App() {

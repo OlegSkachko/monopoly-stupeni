@@ -7,6 +7,21 @@
     box-sizing: border-box;
     outline: 0;
 }
+.dice {
+    z-index: 15; 
+    position: absolute;
+    left: 260px;
+    top: 26.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  
+}
+.img-dice {
+    width:250px;
+    left: 50px;
+
+}
 
 .table-body-board-fields-one {
     display: flex;
@@ -14,8 +29,8 @@
     align-items: center;
     padding: 1px;
     border: 1px solid black;
-    width: 50px;
-    height: 100px;
+    width: 40px;
+    height: 80px;
 }
 
 .table-body-board-fields-one {
@@ -28,7 +43,7 @@
 
 .table-body-board-fields {
     position: relative;
-    left: 150px;
+    left: 130px;
     width: 100%;
     height: 100%;
    
@@ -38,183 +53,186 @@
 
 .table-body-board-fields-one:nth-child(1) {
     top: 0px;
-    left: 0px;
+    left: 5px;
     width: 100px;
 }
 .table-body-board-fields-one:nth-child(2) {
     top: 0px;
-    left: 100px;
+    left: 85px;
 }
 .table-body-board-fields-one:nth-child(3) {
     top: 0px;
-    left: 150px;
+    left: 125px;
 }
 .table-body-board-fields-one:nth-child(4) {
     top: 0px;
-    left: 200px;
+    left: 165px;
 }
 .table-body-board-fields-one:nth-child(5) {
     top: 0px;
-    left: 250px;
+    left: 205px;
 }
 .table-body-board-fields-one:nth-child(6) {
     top: 0px;
-    left: 300px;
+    left: 245px;
 }
 .table-body-board-fields-one:nth-child(7) {
     top: 0px;
-    left: 350px;
+    left: 285px;
 }
 .table-body-board-fields-one:nth-child(8) {
     top: 0px;
-    left: 400px;
+    left: 325px;
 }
 .table-body-board-fields-one:nth-child(9) {
     top: 0px;
-    left: 450px;
+    left: 365px;
 }
 .table-body-board-fields-one:nth-child(10) {
     top: 0px;
-    left: 500px;
+    left: 405px;
 }
 .table-body-board-fields-one:nth-child(11) {
     top: 0px;
-    left: 550px;
-    width: 100px;
+    left: 445px;
+    width: 80px;
 }
 .table-body-board-fields-one:nth-child(12) {
-    top: 75px;
-    left: 575px;
+    top: 60px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(13) {
-    top: 125px;
-    left: 575px;
+    top: 100px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(14) {
-    top: 175px;
-    left: 575px;
+    top: 140px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(15) {
-    top: 225px;
-    left: 575px;
+    top: 180px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(16) {
-    top: 275px;
-    left: 575px;
+    top: 220px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(17) {
-    top: 325px;
-    left: 575px;
+    top: 260px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(18) {
-    top: 375px;
-    left: 575px;
+    top: 300px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(19) {
-    top: 425px;
-    left: 575px;
+    top: 340px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(20) {
-    top: 475px;
-    left: 575px;
+    top: 380px;
+    left: 465px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(21) {
-    top: 550px;
-    left: 550px;
-    width: 100px;
+    top: 440px;
+    left: 445px;
+    width: 80px;
 }
 .table-body-board-fields-one:nth-child(22) {
-    top: 550px;
-    left: 500px;
+    top: 440px;
+    left: 405px;
 }
 .table-body-board-fields-one:nth-child(23) {
-    top: 550px;
-    left: 450px;
+    top: 440px;
+    left: 365px;
 }
 .table-body-board-fields-one:nth-child(24) {
-    top: 550px;
-    left: 400px;
+    top: 440px;
+    left: 325px;
 }
 .table-body-board-fields-one:nth-child(25) {
-    top: 550px;
-    left: 350px;
+    top: 440px;
+    left: 285px;
 }
 .table-body-board-fields-one:nth-child(26) {
-    top: 550px;
-    left: 300px;
+    top: 440px;
+    left: 245px;
 }
 .table-body-board-fields-one:nth-child(27) {
-    top: 550px;
-    left: 250px;
+    top: 440px;
+    left: 205px;
 }
 .table-body-board-fields-one:nth-child(28) {
-    top: 550px;
-    left: 200px;
+    top: 440px;
+    left: 165px;
 }
 .table-body-board-fields-one:nth-child(29) {
-    top: 550px;
-    left: 150px;
+    top: 440px;
+    left: 125px;
 }
 .table-body-board-fields-one:nth-child(30) {
-    top: 550px;
-    left: 100px;
+    top: 440px;
+    left: 85px;
 }
 .table-body-board-fields-one:nth-child(31) {
-    top: 550px;
-    left: 0px;
-    width: 100px;
+    top: 440px;
+    left: 5px;
+    width: 80px;
 }
-.table-body-board-fields-one:nth-child(40) {
-    top: 75px;
-    left: 25px;
-    transform: rotate(90deg);
-}
-.table-body-board-fields-one:nth-child(39) {
-    top: 125px;
-    left: 25px;
-    transform: rotate(90deg);
-}
-.table-body-board-fields-one:nth-child(38) {
-    top: 175px;
-    left: 25px;
-    transform: rotate(90deg);
-}
-.table-body-board-fields-one:nth-child(37) {
-    top: 225px;
-    left: 25px;
-    transform: rotate(90deg);
-}
-.table-body-board-fields-one:nth-child(36) {
-    top: 275px;
-    left: 25px;
-    transform: rotate(90deg);
-}
-.table-body-board-fields-one:nth-child(35) {
-    top: 325px;
-    left: 25px;
-    transform: rotate(90deg);
-}
-.table-body-board-fields-one:nth-child(34) {
-    top: 375px;
+.table-body-board-fields-one:nth-child(32) {
+    top: 380px;
     left: 25px;
     transform: rotate(90deg);
 }
 .table-body-board-fields-one:nth-child(33) {
-    top: 425px;
+    top: 340px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(32) {
-    top: 475px;
+.table-body-board-fields-one:nth-child(34) {
+    top: 300px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+.table-body-board-fields-one:nth-child(35) {
+    top: 260px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+
+.table-body-board-fields-one:nth-child(36) {
+    top: 220px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+
+.table-body-board-fields-one:nth-child(37) {
+    top: 180px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+.table-body-board-fields-one:nth-child(38) {
+    top: 140px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+.table-body-board-fields-one:nth-child(39) {
+    top: 100px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+.table-body-board-fields-one:nth-child(40) {
+   
+    top: 60px;
     left: 25px;
     transform: rotate(90deg);
 }
