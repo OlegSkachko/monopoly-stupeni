@@ -19,6 +19,8 @@
 }
 
 .table-body-board-fields-one {
+    display: flex;
+    flex-direction: column;
     background-color: #daeaf1;
     position: absolute;
     z-index: 3;
@@ -171,22 +173,22 @@
     left: 0px;
     width: 100px;
 }
-.table-body-board-fields-one:nth-child(32) {
+.table-body-board-fields-one:nth-child(40) {
     top: 75px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(33) {
+.table-body-board-fields-one:nth-child(39) {
     top: 125px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(34) {
+.table-body-board-fields-one:nth-child(38) {
     top: 175px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(35) {
+.table-body-board-fields-one:nth-child(37) {
     top: 225px;
     left: 25px;
     transform: rotate(90deg);
@@ -196,22 +198,22 @@
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(37) {
+.table-body-board-fields-one:nth-child(35) {
     top: 325px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(38) {
+.table-body-board-fields-one:nth-child(34) {
     top: 375px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(39) {
+.table-body-board-fields-one:nth-child(33) {
     top: 425px;
     left: 25px;
     transform: rotate(90deg);
 }
-.table-body-board-fields-one:nth-child(40) {
+.table-body-board-fields-one:nth-child(32) {
     top: 475px;
     left: 25px;
     transform: rotate(90deg);

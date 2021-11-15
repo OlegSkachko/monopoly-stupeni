@@ -3,9 +3,7 @@ import './index.css'
 
 const Ball = (props) => {
     return (
-        <div className='ball'>
-            
-        </div>
+        <div className={props.color ==='green'? 'ball green': 'ball'}/>
     );
 };
 
