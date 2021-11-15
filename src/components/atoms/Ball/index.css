@@ -1,0 +1,10 @@
+.ball {
+    z-index: 10;
+    position: relative;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+   
+    transition: all 2s ease-in-out;
+}

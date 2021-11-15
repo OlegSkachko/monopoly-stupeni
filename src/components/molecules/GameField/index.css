@@ -1,4 +1,17 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    outline: 0;
+}
+
 .table-body-board-fields-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1px;
     border: 1px solid black;
     width: 50px;
@@ -6,9 +19,8 @@
 }
 
 .table-body-board-fields-one {
-    background-color: #90a0a8;
+    background-color: #daeaf1;
     position: absolute;
-    transition: .1s ease-in-out;
     z-index: 3;
 }
 
@@ -20,15 +32,7 @@
    
 }
 
-* {
-    
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-    outline: 0;
-}
+
 
 .table-body-board-fields-one:nth-child(1) {
     top: 0px;
