@@ -4,8 +4,11 @@ import Dice from '../../atoms/Dice/Dice';
 import ModalWindow from '../../atoms/ModalWindow/ModalWindow';
 import gifDice from './../../../img/dice1.gif'
 import './index.css'
-
+import diceAudio from './../../../audio/dice.mp3'
+import q1 from './../../../img/start.png'
+import q2 from './../../../img/chanel.svg'
 const GameField = () => {
+    let audioDice = new Audio(diceAudio)
     const [num, setNum] =useState(false)
     const [modal, setModal] = useState(true)
     const [count, setCount] = useState(0)
@@ -22,16 +25,19 @@ const GameField = () => {
        
         return arr.map((i,index)=> {
          if(index===count){
-                return <div onClick={()=> changeBall(index)} className="table-body-board-fields-one"> <Ball/> </div>
+                return <div onClick={()=> changeField(index)} 
+                className="table-body-board-fields-one"> <Ball/> </div>
                 }
-         if(index===count1){
-            return <div onClick={()=> changeBall(index)} className="table-body-board-fields-one"> <Ball color='green'/> </div>
+         if(index===3){
+            return <div onClick={()=> changeField(index)} className="table-body-board-fields-one"> <Ball color='green' /> </div>
             }
-            return <div onClick={()=> changeBall(index)}  className="table-body-board-fields-one"> {/* 1 */} </div>
+            return <div style={{ backgroundImage: `url(${q1})`, backgroundSize: 'contain', backgroundSize:'100%', backgroundRepeat: 'no-repeat'}} onClick={()=> changeField(index)}  className="table-body-board-fields-one"> {/* 1 */} </div>
          })
     }
     
-function changeBall(index) {}
+function changeField(index) {
+    
+}
 
 function resetDiceWaiting() {
     setTimeout(()=> setNum(false), 2600)
@@ -39,6 +45,7 @@ function resetDiceWaiting() {
 
 
 function dice() {
+    audioDice.play()
     setNum1(false)
     resetDiceWaiting()
     setNum(true)
@@ -81,7 +88,8 @@ function dice() {
 }
 
 function diceWaiting() {
-   
+  
+  
    if(num1===false) {
         setTimeout(()=>setNum1(true),1200)
        return <img className='img-dice' src={gifDice}/>
@@ -93,7 +101,7 @@ function diceWaiting() {
 }
 
     return (
-        <div style={{position:'relative', display: 'flex', justifyContent:'center', alignItems:'center'}}>
+        <div className='gamefield'>
             {
                 num === false?
                 <ModalWindow
