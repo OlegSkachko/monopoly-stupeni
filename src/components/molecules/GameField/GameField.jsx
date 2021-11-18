@@ -7,16 +7,30 @@ import './index.css'
 import diceAudio from './../../../audio/dice.mp3'
 import q1 from './../../../img/start.png'
 import q2 from './../../../img/chanel.svg'
+
+
 const GameField = () => {
     let audioDice = new Audio(diceAudio)
     const [num, setNum] =useState(false)
     const [modal, setModal] = useState(true)
     const [count, setCount] = useState(0)
-    const [count1, setCount1] = useState(0)
     const [dice1, setDice1] = useState('')
     const [dice2, setDice2] = useState('')
-    const [num1, setNum1] =useState(false)
+    const [num1, setNum1] = useState(false)
+    const [gotoleft, setgotoleft] = useState(false)
     let arr = []
+
+    const rightDict = {
+        2: "gotoRight2",
+        3: "gotoRight3",
+        4: "gotoRight4",
+        5: "gotoRight5",
+        6: "gotoRight6",
+        7: "gotoRight7",
+        8: "gotoRight8",
+        9: "gotoRight9",
+        0: "stay"
+    }
    
     function createFields() {
         for(let i=0; i<40; i++) {
@@ -26,13 +40,14 @@ const GameField = () => {
         return arr.map((i,index)=> {
          if(index===count){
                 return <div onClick={()=> changeField(index)} 
-                className="table-body-board-fields-one"> <Ball/> </div>
+                className="table-body-board-fields-one"> <Ball goto={gotoleft === true? rightDict[dice1 + dice2] : 'stay'} /> </div>
                 }
-         if(index===3){
+         if(index===100){
             return <div onClick={()=> changeField(index)} className="table-body-board-fields-one"> <Ball color='green' /> </div>
             }
             return <div style={{ backgroundImage: `url(${q1})`, backgroundSize: 'contain', backgroundSize:'100%', backgroundRepeat: 'no-repeat'}} onClick={()=> changeField(index)}  className="table-body-board-fields-one"> {/* 1 */} </div>
-         })
+         }
+        )
     }
     
 function changeField(index) {
@@ -54,37 +69,14 @@ function dice() {
     setDice1(a)
     setDice2(b)
     
-    let index = count+a+b 
-    setTimeout(()=> {
-        if(index>40) {
-            let k=1
-            for(let i=count; i<=40; i++) {
-                k++
-                setTimeout(() => {
-                    setCount(i)
-                },100+100*k); 
-                if(i===40){
-                    for(let i=0; i<=index-40; i++) {
-                        k++
-                        setTimeout(() => {
-                            setCount(i)
-                        
-                        }, 100+100*k); } 
-                    }
-                  
-                }
-                
-        }   
-        else {
-            for(let i=count, k=1; i<=index; i++) {
-                k++
-                setTimeout(() => {
-                    setCount(i)
-                   
-                },100+100*k); 
-            }
-        }  
-    },900)   
+    let index = count+a+b
+
+    setgotoleft(true)
+
+    setTimeout(() => {
+        setCount(index)
+        setgotoleft(false)
+    }, (a + b) * 500);
 }
 
 function diceWaiting() {

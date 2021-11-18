@@ -47,7 +47,6 @@
     flex-direction: column;
     background-color: #daeaf1;
     position: absolute;
-    z-index: 3;
 }
 
 .red {
@@ -73,7 +72,7 @@
     align-items: center;
     top: 0px;
     left: 5px;
-    width: 100px;
+    width: 80px;
    
 }
 .table-body-board-fields-one:nth-child(2) {

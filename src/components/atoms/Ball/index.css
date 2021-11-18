@@ -1,14 +1,66 @@
 .ball {
     display: flex;
-    margin: 5px;
     border: 2px solid darkred;
     position: relative;
     background-color: red;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-}
+    z-index: 15;
+}   
 
 .green {
     background-color: darkgreen;
+}
+
+.gotoRight2 {
+    left: 60px;
+    transition: all 0.5s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight3 {
+    left: 100px;
+    transition: all 1s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight4 {
+    left: 140px;
+    transition: all 1.5s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight5 {
+    left: 180px;
+    transition: all 2s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight6 {
+    left: 220px;
+    transition: all 2.5s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight7 {
+    left: 260px;
+    transition: all 3s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight8 {
+    left: 300px;
+    transition: all 3.5s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.gotoRight9 {
+    left: 340px;
+    transition: all 4s ease-in-out;
+    transform: translate(40px,0);
+}
+
+.stay {
+    left: 0px;
 }
